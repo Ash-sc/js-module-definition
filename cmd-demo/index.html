@@ -12,17 +12,18 @@
         line-height: 2;
       }
     </style>
-    <title>AMD DEMO</title>
+    <title>CMD DEMO</title>
   </head>
   <body>
-    <p>JS files loaded order (AMD):</p>
+    <p>JS files loaded order (CMD):</p>
     <ol id="order-ul">
     </ol>
+    <script src="./sea.js"></script>
     <script>
       window.$ = function(id = '') {
         return id ? window.document.getElementById(id) : {}
       }
+      seajs.use("./main")
     </script>
-    <script data-main="main" src="./require.js"></script>
   </body>
 </html>

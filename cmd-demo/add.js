@@ -1,4 +1,4 @@
-define(function() {
+define(function(require, exports, module) {
 
   console.log('add.js loaded ! (required by calculate.js)')
   $('order-ul').innerHTML += '<li>add.js loaded ! (required by calculate.js)</li>'
@@ -8,7 +8,8 @@ define(function() {
     if (args.length) result += add(...args)
     return result
   }
-  return {
+
+  module.exports = {
     add
   }
 })

@@ -12,10 +12,10 @@
         line-height: 2;
       }
     </style>
-    <title>AMD DEMO</title>
+    <title>ES6 DEMO</title>
   </head>
   <body>
-    <p>JS files loaded order (AMD):</p>
+    <p>JS files loaded order (ES6):</p>
     <ol id="order-ul">
     </ol>
     <script>
@@ -23,6 +23,6 @@
         return id ? window.document.getElementById(id) : {}
       }
     </script>
-    <script data-main="main" src="./require.js"></script>
+    <script src="./main.js" type="module"></script>
   </body>
 </html>
