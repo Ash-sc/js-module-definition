@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <style>
+      body {
+        font-family: 'Hiragino Sans GB', "Microsoft Yahei", "微软雅黑", sans-serif;
+      }
+      ol {
+        line-height: 2;
+      }
+    </style>
+    <title>ES6 DEMO</title>
+  </head>
+  <body>
+    <p>JS files loaded order (ES6):</p>
+    <ol id="order-ul">
+    </ol>
+    <script>
+      window.$ = function(id = '') {
+        return id ? window.document.getElementById(id) : {}
+      }
+    </script>
+    <script src="./dist/main.js"></script>
+  </body>
+</html>
